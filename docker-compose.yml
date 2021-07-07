@@ -4,7 +4,7 @@
 version: '3.1'
 
 services:
-  ghost:
+  himalayanhike-ghost:
     build:
       context: ./ghost
       dockerfile: Dockerfile.dev
@@ -16,5 +16,5 @@ services:
     env_file:
       - .env.dev
     volumes:
-      - /var/lib/ghost/content/themes/yatri-casper/node_modules
-      - ./ghost/themes/yatri-casper:/var/lib/ghost/content/themes/yatri-casper
+      - /var/lib/ghost/content/themes/himalayanhike-casper/node_modules
+      - ./ghost/themes/himalayanhike-casper:/var/lib/ghost/content/themes/himalayanhike-casper

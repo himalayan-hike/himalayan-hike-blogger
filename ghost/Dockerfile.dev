@@ -2,8 +2,8 @@ FROM ghost:4
 
 WORKDIR /var/lib/ghost
 
-COPY ./themes/yatri-casper ./content/themes/yatri-casper
+COPY ./themes/himalayanhike-casper ./content/themes/himalayanhike-casper
 
-RUN cd ./content/themes/yatri-casper && yarn install
+RUN cd ./content/themes/himalayanhike-casper && yarn install
 
 # CMD tail -f /dev/null
